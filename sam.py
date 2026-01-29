@@ -125,7 +125,7 @@ with col3:
 
     g.set_titles("{col_name}")
     g.set_axis_labels("Ticker", "Return")
-
+    g.fig.subplots_adjust(hspace=0.8, top=0.95)
     st.pyplot(g.fig)
 
 
@@ -159,8 +159,9 @@ with col4:
 
     g2.set_titles("{col_name}")
     g2.set_axis_labels("Ticker", "Return")
-
+    g2.fig.subplots_adjust(hspace=0.8, top=0.95)
     st.pyplot(g2.fig)
 
 st.markdown("---")
 st.success("Dashboard loaded successfully ✅")
+
